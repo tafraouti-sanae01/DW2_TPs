@@ -319,13 +319,13 @@
                                             $mail->isSMTP();
                                             $mail->Host = 'smtp.gmail.com';
                                             $mail->SMTPAuth = true;
-                                            $mail->Username = 'douaetest14@gmail.com';
-                                            $mail->Password = 'xkft mxbj swpo zdvk';
+                                            $mail->Username = 'exemple@gmail.com';
+                                            $mail->Password = 'votre_mot_de_passe';
                                             $mail->SMTPSecure = 'tls';
                                             $mail->Port = 587;
 
                                             foreach ($EmailsT as $i=>$to_email) {
-                                                $mail->setFrom('douaetest14@gmail.com');
+                                                $mail->setFrom('exemple@gmail.com');
                                                 $mail->clearAllRecipients();
                                                 $mail->addAddress($to_email,);
 
